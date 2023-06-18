@@ -13,7 +13,7 @@ function App() {
   const [age, setAge] = useState(20);
   return (
     <div className="App">
-      <CartContext.Provider value={{ name, age }}>
+      <CartContext.Provider value={{ name, age,cart,setCart }}>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
